@@ -1,0 +1,117 @@
+html {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    max-width: 768px;
+    margin: 40px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.notif-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+}
+
+.notifications {
+    background-color: red;
+    border-radius: 27%;
+    padding: 7px;
+    font-size: 17px;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.notifications.active {
+    display: none;
+}
+
+.notif-box .title {
+    font-size: 24px;
+    font-weight: bolder;
+
+}
+.mark-all {
+    cursor: pointer;
+}
+.mark-all:hover {
+    color: blue;
+}
+.notif-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.notif-card img {
+    width: 50px;
+}
+
+.description {
+    margin-left: 18px;
+}
+
+.user-activity strong {
+    font-weight: bolder;
+    cursor: pointer;
+}
+.user-activity strong:hover {
+    color: blue;
+}
+.user-activity b {
+    color: #6a6565;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 20px;
+}
+.user-activity b:hover {
+    color: blue;
+}
+.time {
+    margin-top: 6px;
+}
+
+.message {
+    max-width: 483px;
+    margin-left: 85px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid silver;
+}
+.message:hover {
+    
+    background-color: silver;
+    transition: 0.4s;
+}
+
+
+.chess-img {
+    margin-left: auto;
+}
+
+.unread {
+    background-color: #d4d7df;
+    margin-top: 8px;
+    border-radius: 8px;
+}
+.unread p:nth-child(1):after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: orangered;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 4px;
+}
+
+@media (max-width: 375px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;  
+    }
+
+}
